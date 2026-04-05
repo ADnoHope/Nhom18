@@ -30,6 +30,23 @@ npm start
 npm run dev
 ```
 
+## Docker
+
+Run the whole project with MySQL in containers:
+
+```bash
+docker compose up -d --build
+```
+
+The app will be available at http://localhost:3001. MySQL stays inside the compose network, so it does not bind a host port by default.
+
+If you want to push the app image to Docker Hub, build and tag it first:
+
+```bash
+docker build -t <your-dockerhub-username>/webxemphim:latest .
+docker push <your-dockerhub-username>/webxemphim:latest
+```
+
 ## Cấu trúc thư mục
 
 ```text
