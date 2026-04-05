@@ -35,7 +35,17 @@ npm run dev
 ```text
 webxemphim/
 	public/        # Toàn bộ giao diện HTML/CSS/JS phía client
-	src/           # API server + database init/seed
+	src/
+		app/         # Entry server và HTTP/Socket bootstrap
+		database/    # Kết nối DB + khởi tạo schema
+		scripts/     # Scripts tiện ích (seed dữ liệu)
+		config/      # Cấu hình môi trường
+		controllers/ # Xử lý nghiệp vụ API
+		routes/      # Định tuyến API
+		services/    # Business services
+		middlewares/ # Middleware xác thực
+		utils/       # Hàm tiện ích dùng chung
+		schemas/     # Schema validation
 	.env.example
 	package.json
 ```

@@ -2,11 +2,11 @@
   "name": "webxemphim",
   "version": "1.0.0",
   "description": "JavaScript starter project",
-  "main": "src/index.js",
+  "main": "src/app/server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
-    "seed": "node src/seed-data.js"
+    "start": "node src/app/server.js",
+    "dev": "node --watch src/app/server.js",
+    "seed": "node src/scripts/seed-data.js"
   },
   "keywords": [],
   "author": "",
